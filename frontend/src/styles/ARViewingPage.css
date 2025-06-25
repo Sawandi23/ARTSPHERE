@@ -1,0 +1,30 @@
+@import '../styles/variables.css';
+
+.ar-viewing-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+  
+.ar-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-color: var(--dark-color);
+}
+  
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--pure-white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.back-button:hover {
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,55 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global font and color variables */
+  :root {
+    --primary-color: #1a1a1a;
+    --highlight-color: #007bff;
+    --light-text: #f1f1f1;
+    --transition: all 0.3s ease-in-out;
+    --font-main: 'Montserrat', sans-serif;
+  }
+  
+  /* Apply to whole app */
+  body {
+    font-family: var(--font-main);
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Reusable utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-2 {
+    margin-top: 2rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--highlight-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  

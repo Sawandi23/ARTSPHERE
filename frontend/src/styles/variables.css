@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #2c3e50;     /* Deep navy blue for primary brand color */
+    --secondary-color: #f0f5fa;   /* Light blue-gray for backgrounds */
+    --accent-color: #3498db;      /* Vibrant medium blue for accents and highlights */
+    --light-color: #e8f1f9;       /* Pale blue for subtle backgrounds and dividers */
+    --dark-color: #1e2935;        /* Dark blue for headers and emphasis */
+    --text-color: #21303e;        /* Slate blue for text */
+    --pure-white: #FFFFFF;        /* Pure white for contrast elements */
+    --soft-gray: #d1e2f2;         /* Soft blue-gray for borders and secondary elements */
+  
+    --border-radius: 8px;         /* Rounded corners */
+    --box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1); /* Blue-tinted shadow */
+  
+    /* Additional complementary colors */
+    --light-blue: #5dade2;
+    --hover-blue: #2980b9;
+    --inactive-blue: #c7ddf2;
+    --deep-accent: #1d6fa5;
+    --tertiary-blue: #a3c6e8;
+
+    --primary-color: #2c3e50;
+  --secondary-color: #d4dbe2;
+  --accent-color: #7a7d7f;
+  --text-color: #34495e;
+  --box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+  --border-radius: 8px;
+  --hover-blue: #2980b9;
+  --pure-white: #ffffff;
+  }
+  

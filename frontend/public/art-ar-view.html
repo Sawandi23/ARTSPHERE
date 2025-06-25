@@ -1,0 +1,38 @@
+<!-- public/art-ar-view.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR Art Viewer</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+    <style> body { margin: 0; } </style>
+  </head>
+  <body>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const img = params.get('img') || 'default.jpg';
+      window.onload = () => {
+        document.getElementById('artImage').setAttribute('src', img);
+      };
+    </script>
+
+    <a-scene
+      mindar-image="imageTargetSrc: target.mind; autoStart: true;"
+      embedded
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: true"
+    >
+      <a-assets>
+        <img id="artImage" src="" />
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-image src="#artImage" position="0 0 0" width="1.5" height="1.5"></a-image>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

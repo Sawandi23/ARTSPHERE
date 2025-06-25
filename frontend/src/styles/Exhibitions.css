@@ -1,0 +1,86 @@
+/* src/styles/Exhibitions.css */
+
+@import '../styles/variables.css';
+
+.exhibitions-container {
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    background-color: var(--secondary-color);  /* ✅ Using your variable */
+    color: var(--text-color);
+}
+.exhibition-description {
+    font-family: 'Avenir Next', sans-serif;
+    opacity: 0.6;
+    font-size: 1rem;
+    color: #102136;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+ 
+  
+
+.exhibition-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #615d5d;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova';
+}
+
+h2{
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #615d5d;
+    text-align: left;
+   
+}
+
+/* src/styles/Exhibitions.css */
+.private-viewing-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .private-viewing-button .add-btn {
+    padding: 10px 20px;
+    background-color: #233c56;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .private-viewing-button .add-btn:hover {
+    background-color: #233c56;
+  }
+
+  /* Add this to your Exhibitions.css */
+.search-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
